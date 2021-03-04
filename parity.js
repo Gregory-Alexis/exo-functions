@@ -1,16 +1,9 @@
 const isOdd = num => {
-  if (num % 2 !== 0) {
-    return true
-  } else {
-    return false
-  }
+  return num % 2 !== 0
 }
 
+
 const isEven = num => {
-  if (isOdd(num) % 2 === 0) {
-    return true
-  } else {
-    return false
-  }
+  return !isOdd(num)
 }
-console.log(isEven(33))
+console.log(isOdd(33))
